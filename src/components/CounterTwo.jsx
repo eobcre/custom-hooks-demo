@@ -1,19 +1,10 @@
-import { useState } from 'react';
+import useCounter from '../Hooks/useCounter';
 
 const CounterTwo = () => {
-  const [count, setCount] = useState(0);
-
-  const incrementCounter = () => {
-    setCount((prevState) => prevState + 1);
-  };
-
-  const decrementCounter = () => {
-    setCount((prevState) => prevState - 1);
-  };
-
-  const clearCounter = () => {
-    setCount(0);
-  };
+  const [count, incrementCounter, decrementCounter, clearCounter] = useCounter(
+    10,
+    10
+  );
 
   return (
     <div className='counter'>
