@@ -4,10 +4,26 @@
   box-sizing: border-sizing;
 }
 
+button {
+  margin: 10px;
+  padding: 2px;
+}
+
 .counter-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 30px;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.counter h2 {
   padding: 30px;
 }
