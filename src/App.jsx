@@ -11,6 +11,10 @@ const App = () => {
     setCount((prevState) => prevState - 1);
   };
 
+  const clearCounter = () => {
+    setCount(0);
+  };
+
   return (
     <div className='counter-container'>
       <h1>Counter Demo</h1>
@@ -19,7 +23,7 @@ const App = () => {
         <div className='button-container'>
           <button onClick={incrementCounter}>Increment</button>
           <button onClick={decrementCounter}>Decrement</button>
-          <button>Clear</button>
+          <button onClick={clearCounter}>Clear</button>
         </div>
       </div>
     </div>
