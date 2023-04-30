@@ -14,7 +14,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px;
+  padding: 50px;
 }
 
 .counter {
@@ -22,8 +22,19 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
 }
 
 .counter h2 {
   padding: 30px;
+}
+
+/* CounterTwo  */
+.increment-button,
+.decrement-button,
+.clear-button {
+  border: none;
+  border-radius: 3px;
+  background-color: #90ee90;
+  padding: 10px;
 }
